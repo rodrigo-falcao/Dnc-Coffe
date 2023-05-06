@@ -1,0 +1,48 @@
+body {
+    background-color:#F6F5FB;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.LogoCoffe:hover {
+    background-color: #2A3342;
+    color: #FFFFFF !important;
+}
+
+.buttonOrder {
+    border-color: #D1D1D1;
+    background-color: #FFFFFF;
+    color: #2A3342;
+    border: #2A3342 1px solid;
+}
+
+.buttonOrder:hover {
+    background-color: #2A3342;
+}
+
+.hoverNav {
+    color: #2A3342 !important;
+}
+
+.hoverNav:hover {
+    background-color: #2A3342;
+    color: #FFFFFF !important;
+}
+
+.modalHelpImg img {
+    width: 6rem;
+}
+
+.linkModal {
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    color: #2A3342 !important;
+}
+
+.linkModal:hover {
+    background-color: #2A3342 !important;
+    color: #FFFFFF !important;
+}
+
+.modalContent {
+    background-color: #F6F5FB !important;
+}
