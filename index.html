@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <!-- STYLE  -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- SCRIPT JS -->
+    <script src="/script/main.js" defer></script>
+    <script src="/script/main2.js" defer></script>
 </head>
 <body>
     <!-- BARRA DE NAVEGAÇÃO -->
@@ -31,10 +34,10 @@
                         <a class="nav-link active fw-semibold hoverNav rounded-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link active fw-semibold hoverNav rounded-5" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">Sobre</a>
+                        <a class="nav-link active fw-semibold hoverNav rounded-5" href="#">Sobre</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link active fw-semibold hoverNav rounded-5" href="#" data-bs-toggle="modal" data-bs-target="#helpModal">Ajuda</a>
+                        <a class="nav-link active fw-semibold hoverNav rounded-5" id="openModal" href="#">Atendimento</a>
                     </li>
                 </ul>
                 <button type="button" class="btn btn-outline-secondary rounded-5 text-nowrap me-2 buttonOrder">Fazer Pedido</button>
@@ -44,66 +47,59 @@
     <!-- IMG PRINCIPAL -->
     <img src="./assets/image 11.png" class="img-fluid w-100 max-width-200" alt="café na xicará em formato de coração">
     <!-- CARDS -->
-    <div class="card-group pt-4">
-        <div class="card w-100 px-2 rounded-2 border-0" style="width: 18rem;">
+    <div class="card-group mt-4">
+        <div class="card w-100 mx-2 rounded-2 border-0" style="width: 18rem;">
             <img src="./assets/image 9.png" class="card-img-top rounded-top-2" alt="...">
             <div class="card-body">
                 <p class="card-text">Nossa loja de café se encontra em um lugar, 100% fictício, porém caso se sinta interessado pode vir tomar um café conosco em nossa sede em São José dos Campos.</p>
             </div>
-        </div>
-        <div class="card w-100 px-2 rounded-2 border-0" style="width: 18rem;">
-                <img src="./assets/image 10.png" class="card-img-top rounded-top-2" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa conversar, bons amigos e um ambiente sem igual. Aproveite, pois Melhor que a DNC não existe!</p>
+            <div class="cardbuy">
+                <button id="cardBuy" class="hidden">COMPRAR AGORA</button>
             </div>
         </div>
-        <div class="card w-100 px-2 rounded-2 border-0" style="width: 18rem;">
+        <div class="card w-100 mx-2 rounded-2 border-0" style="width: 18rem;">
+            <img src="./assets/image 10.png" class="card-img-top rounded-top-2" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa conversar, bons amigos e um ambiente sem igual. Aproveite, pois Melhor que a DNC não existe!</p>
+            </div>
+            <div class="cardbuy">
+                <button id="cardBuy" class="hidden">COMPRAR AGORA</button>
+            </div>
+        </div>
+        <div class="card w-100 mx-2 rounded-2 border-0" style="width: 18rem;">
             <img src="./assets/image 8.png" class="card-img-top rounded-top-2" alt="...">
             <div class="card-body">
                 <p class="card-text">Por que a DNC? Porque podem contar sempre com um serviço genuíno, uma atmosfera acolhedora e uma incrível xícara de café, torrado por especialistas e preparado de forma enriquecedora.</p>
             </div>
+            <div class="cardbuy">
+                <button id="cardBuy" class="hidden">COMPRAR AGORA</button>
+            </div>
         </div>
-        <div class="card w-100 px-2 rounded-2 border-0" style="width: 18rem;">
+        <div class="card w-100 mx-2 rounded-2 border-0" style="width: 18rem;">
             <img src="./assets/image 7.png" class="card-img-top rounded-top-2" alt="...">
             <div class="card-body">
                 <p class="card-text">A escola especialista em formar talentos, com foco em empregabilidade, migração de carreira e aumento de performance.</p>
             </div>
-        </div>
-    </div>
-    <!-- MODALS -->
-    <div>
-        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content modalContent">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="aboutModalLabel">Quem somos nós?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <p>
-                        Tudo o que fazemos procura respeitar essa conexão, 
-                        desde nosso compromisso com o café de melhor qualidade do mundo até a 
-                        forma como nós interagimos com nossos clientes e nossas comunidades para 
-                        conduzir nosso negócio de modo responsável.
-                    </p>
-                    <img src="./assets/Rectangle 1.png" class="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
+            <div class="cardbuy">
+                <button id="cardBuy" class="hidden">COMPRAR AGORA</button>
             </div>
         </div>
-        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content modalContent">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="helpModalLabel">Entre em contato conosco!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body modalHelpImg">
-                    <p class="mb-0 fs-5">E-mail</p><a href="https://www.google.com/intl/pt-BR/gmail/about/" class="linkModal rounded-1" target="_blank">testemail@gmail.com</a>
-                    <p class="mb-0 fs-5">WhatsApp</p><a href="https://www.whatsapp.com/?lang=pt_br" class="linkModal rounded-1" target="_blank">(11) 9 9959 - 9959</a>
-                    <img src="./assets/image 20.png" class="rounded mx-auto d-block" alt="">
-                    </div>
-                </div>
+    </div>
+    <!-- MODAL -->
+    <div id="fade" class="hide">
+        <div id="modal" class="hide">
+            <span class="modal-close" class="hide" id="modalClose">&#10006</span>
+            <div class="modal-header">
+                <h2>Quem somos nós?</h2>
+            </div>
+            <div class="modal-body">
+                <p>Tudo o que fazemos procura respeitar essa conexão, 
+                    desde nosso compromisso com o café de melhor qualidade 
+                    do mundo até a forma como nós interagimos com nossos 
+                    clientes e nossas comunidades para conduzir nosso negócio 
+                    de modo responsável.
+                </p>
+                <img src="./assets/Rectangle 1.png" alt="">
             </div>
         </div>
     </div>
