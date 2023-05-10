@@ -27,10 +27,11 @@ body {
 
 .card {
     height: 418px;
+    width: 330px;
 }
 
 .card-text {
-    width: 298px;
+    width: 215px;
     height: 60px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -147,6 +148,7 @@ body {
     .card {
         height: 468px;
         margin: 0 !important;
+        width: 90%;
     }
 
     .card-text {
