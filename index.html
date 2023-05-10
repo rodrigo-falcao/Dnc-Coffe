@@ -13,7 +13,7 @@
     <!-- GOOGLE FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@300&family=Poppins:wght@200&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <!-- STYLE  -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- SCRIPT JS -->
@@ -24,17 +24,17 @@
     <!-- BARRA DE NAVEGAÇÃO -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold LogoCoffe rounded-2" href="index.html"><img src="./assets/Logo.png" alt="logo do café" > Dnc Coffe</a>
+            <a class="navbar-brand fw-bold LogoCoffe rounded-2 fontLogo" href="index.html"><img src="./assets/Logo.png" alt="logo do café" > Dnc Coffe</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav px-2 w-100">
+                <ul class="navbar-nav px-2 w-100 fontClassNav">
                     <li class="nav-item px-2">
                         <a class="nav-link active fw-semibold hoverNav rounded-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link active fw-semibold hoverNav rounded-5" href="#">Sobre</a>
+                        <a class="nav-link active fw-semibold hoverNav rounded-5" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sobre</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link active fw-semibold hoverNav rounded-5" id="openModal" href="#">Atendimento</a>
@@ -85,21 +85,36 @@
             </div>
         </div>
     </div>
-    <!-- MODAL -->
-    <div id="fade" class="hide">
-        <div id="modal" class="hide">
-            <span class="modal-close" class="hide" id="modalClose">&#10006</span>
-            <div class="modal-header">
-                <h2>Quem somos nós?</h2>
+    <!-- MODALS -->
+    <div class="modal fade custom-background" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto p-4 bs-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header border border-0 mt-0 mb-1">
+                    <h2 class="modal-title fs-5 text-center" id="exampleModalLabel">Quem somos nós?</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Tudo o que fazemos procura respeitar essa conexão, 
+                        desde nosso compromisso com o café de melhor qualidade 
+                        do mundo até a forma como nós interagimos com nossos 
+                        clientes e nossas comunidades para conduzir nosso negócio 
+                        de modo responsável.
+                    </p>
+                    <img src="./assets/Rectangle 1.png" class="pb-4" alt="">
+                </div>
             </div>
-            <div class="modal-body">
-                <p>Tudo o que fazemos procura respeitar essa conexão, 
-                    desde nosso compromisso com o café de melhor qualidade 
-                    do mundo até a forma como nós interagimos com nossos 
-                    clientes e nossas comunidades para conduzir nosso negócio 
-                    de modo responsável.
-                </p>
-                <img src="./assets/Rectangle 1.png" alt="">
+        </div>
+    </div>
+    <div id="fade" class="hide">
+        <div id="modal2" class="hide">
+            <span  class="modal-close" id="modalClose">&#10006</span>
+            <div class="modal-header">
+                <h2>Atendimento</h2>
+            </div>
+            <div class="modalCss">
+                <p>Rua José de Alencar, 111, Centro</p>
+                <p>CEP: 12209-000 | +55 (11) 3333-8000</p>
+                <button class="callButton">ENTRAR EM CONTATO</button>
             </div>
         </div>
     </div>

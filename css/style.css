@@ -1,6 +1,14 @@
 body {
     background-color:#F6F5FB !important;
-    font-family: 'Noto Sans', sans-serif;
+}
+
+.fontLogo {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2A3342;
 }
 
 .buttonOrder {
@@ -8,10 +16,23 @@ body {
     background-color: #FFFFFF;
     color: #2A3342;
     border: #2A3342 1px solid;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .buttonOrder:hover {
     background-color: #2A3342;
+}
+
+.fontClassNav {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .hoverNav {
@@ -43,6 +64,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    color: #252423;
 }
 
 .cardbuy {
@@ -53,7 +75,7 @@ body {
 
 .card button {
     width: 202px;
-    height: 60px;
+    height: 48px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -61,6 +83,7 @@ body {
     line-height: 20px;
     background-color: #2A3342;
     color: #F6F5FB;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -74,12 +97,40 @@ body {
 
 /* MODALS */
 
-#fade, #modal {
+/* MODAL BOOTSTRAP */
+.bs-btn-close {
+    --bs-btn-close-opacity: unset;
+}
+
+.modalCssBt {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 20px;
+}
+
+.modal-body p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.custom-background {
+    background-color: rgba(240, 235, 235, 0.4);
+}
+
+/* MODAL PURO (AVALIAÇÃO) */
+
+#fade, #modal2{
     opacity: 1;
     pointer-events: all;
 }
 
-#modal.hide, #fade.hide {
+#modal2.hide, 
+#fade.hide {
     opacity: 0;
     pointer-events: none;
 }
@@ -94,7 +145,7 @@ body {
     z-index: 5;
 }
 
-#modal {
+#modal2 {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -111,6 +162,8 @@ body {
     cursor: pointer;
     float: right;
     width: 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-family: 'Montserrat';
 }
 
 .modal-header {
@@ -118,19 +171,26 @@ body {
     justify-content: center;
     margin-top: 32px;
     margin-bottom: 49px;
-    font-size: 35px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 39px;
+    line-height: 20px;
 }
 
 .modal-header h2 {
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .modal-body {
     text-align: center;
     color: #000000;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 40px;
     margin: 0 30px;
 }
@@ -139,9 +199,40 @@ body {
     margin-top: 20px;
 }
 
+.modalCss {
+    width: 568px;
+    height: 130px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 30px;
+}
+
+.callButton {
+    width: 253px;
+    height: 48px;
+    background: #2A3342;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #F6F5FB;
+}
+
+.modalCss button {
+    margin-top: 79px;
+}
+
 @media (max-width:480px) {
     .card-group {
-        width: 90%;
+        width: 70%;
         padding: 0;
         margin: auto;
     }
@@ -152,24 +243,37 @@ body {
     }
 
     .card-text {
-        width: 80%;
+        width: 60%;
     }
 
-    #modal {
+    .modal-header {
+        padding: 0;
+    }
+    #modal2 {
         width: 80%;
         height: auto;
     }
 
-    .modal-body {
-        font-size: 85%;
+    .modal-body p{
+        font-size: 65%;
+        font-size: 60%;
     }
 
-    .modal-header{
+    .modal-header h2{
         margin-top: 10px;
         margin-bottom: 19px;
     }
 
     .modal-body img {
         width: 50%;
+    }
+
+    .callButton {
+        width: 80%;
+    }
+
+    .modalCss {
+        width: 70%;
+        height: auto;
     }
 }
