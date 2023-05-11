@@ -108,6 +108,9 @@ body {
     font-weight: 300;
     font-size: 35px;
     line-height: 20px;
+}
+
+.modal-content {
     border: none !important;
 }
 
