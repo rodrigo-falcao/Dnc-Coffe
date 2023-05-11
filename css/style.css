@@ -236,7 +236,7 @@ body {
 
 @media (max-width:480px) {
     .card-group {
-        width: 70%;
+        width: 90%;
         padding: 0;
         margin: auto;
     }
