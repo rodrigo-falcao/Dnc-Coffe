@@ -19,6 +19,7 @@ O site foi desenvolvido usando HTML, CSS e Bootstrap. Também foram utilizados o
 
 <li>Bootstrap 5.3.0-alpha3</li>
 <li>Google Fonts</li>
+<li>JavaScript</li>
 
 ###
 
