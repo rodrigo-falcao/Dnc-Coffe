@@ -11,12 +11,15 @@ que inclui uma barra de navegação, uma imagem principal e três cards promocio
 A barra de navegação contém links para a página inicial, uma página "Sobre" 
 e uma página "Ajuda". Há também um botão de "Fazer Pedido" na barra de navegação.
 
+A avaliação foi elaborada em testar parte do site em bootstrap e logo após a execução do modal mais algumas funcionalidades em JS puro.
+
 <h2>Tecnologias</h2>
 
 O site foi desenvolvido usando HTML, CSS e Bootstrap. Também foram utilizados os seguintes recursos:
 
 <li>Bootstrap 5.3.0-alpha3</li>
 <li>Google Fonts</li>
+<li>JavaScript</li>
 
 ###
 
