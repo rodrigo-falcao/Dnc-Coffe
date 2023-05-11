@@ -108,6 +108,7 @@ body {
     font-weight: 300;
     font-size: 35px;
     line-height: 20px;
+    border: none !important;
 }
 
 .modal-body p {
