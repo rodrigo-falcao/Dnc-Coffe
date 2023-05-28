@@ -1,8 +1,11 @@
 <h1>DNC Coffe</h1>
 
-Este é um site de café criado para fins de avaliação e prática. 
-Site elaborado para utilização do framework e também foi feito algumas funções a mais para prática, 
-além de finalizada a responsividade.
+Este é um site de café criado para fins de avaliação e prática. <br>
+Parte do site foi para avaliação da parte do bootstrap e outra parte para fazer o modal do Js puro.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/125101340/236642310-3904ff77-2bdf-41f7-a466-902e559db5c7.png" width="650" alt="accessibility text">
+</p>
 
 <h2>Funcionalidades</h2>
 
@@ -22,5 +25,3 @@ O site foi desenvolvido usando HTML, CSS e Bootstrap. Também foram utilizados o
 <li>JavaScript</li>
 
 ###
-
-![image](https://user-images.githubusercontent.com/125101340/236642310-3904ff77-2bdf-41f7-a466-902e559db5c7.png)
